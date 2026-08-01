@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ark Nova Public Package Check</title>
+    <style>
+      :root { color-scheme: light dark; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      body { margin: 0; background: #f7f7f2; color: #19201b; }
+      main { max-width: 880px; margin: 0 auto; padding: 32px 20px 48px; }
+      h1 { margin: 0 0 8px; font-size: 28px; line-height: 1.15; letter-spacing: 0; }
+      p { line-height: 1.55; }
+      section { margin-top: 20px; padding: 16px; border: 1px solid #cfd7ce; border-radius: 8px; background: #ffffff; }
+      dl { display: grid; grid-template-columns: minmax(140px, 220px) 1fr; gap: 10px 14px; margin: 0; }
+      dt { font-weight: 700; color: #36513a; }
+      dd { margin: 0; overflow-wrap: anywhere; }
+      ul { margin: 10px 0 0; padding-left: 22px; }
+      li { margin: 6px 0; line-height: 1.45; }
+      code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.94em; }
+      a { color: #235f9c; }
+      .status { display: inline-block; padding: 2px 8px; border-radius: 999px; background: #d9ecdf; color: #173f22; font-weight: 700; }
+      .warning { border-color: #d5b85c; background: #fff9df; }
+      .compact { columns: 2; }
+      @media (prefers-color-scheme: dark) {
+        body { background: #111511; color: #e8eee6; }
+        section { background: #192019; border-color: #435043; }
+        dt { color: #a9d4ad; }
+        a { color: #8cc5ff; }
+        .status { background: #20412a; color: #cbf2d0; }
+        .warning { border-color: #806f2e; background: #2b2714; }
+      }
+      @media (max-width: 680px) { dl { grid-template-columns: 1fr; } .compact { columns: 1; } }
+    </style>
+  </head>
+  <body>
+    <main data-testid="ark-nova-public-check" data-dist-fingerprint="sha256:07eb27055b7027eabb8f4ed18f99223cbdf1462ff2d275616c43994fcf1176f9">
+      <h1>Ark Nova Public Package Check</h1>
+      <p><span class="status">static package</span> This page is generated into the public ZIP so a hosted upload can be identified without opening devbox-only routes.</p>
+      <section aria-labelledby="identity">
+        <h2 id="identity">Identity</h2>
+        <dl>
+          <dt>App</dt><dd>ark-nova-v0</dd>
+          <dt>Generated</dt><dd>2026-08-01T17:14:33.341Z</dd>
+          <dt>Router</dt><dd>hash</dd>
+          <dt>Base path</dt><dd>/Ark_Nova_Play/</dd>
+          <dt>Dist fingerprint</dt><dd><code>sha256:07eb27055b7027eabb8f4ed18f99223cbdf1462ff2d275616c43994fcf1176f9</code></dd>
+        </dl>
+      </section>
+      <section aria-labelledby="assets">
+        <h2 id="assets">Public Files</h2>
+        <p><a href="./ark-nova-public.json">ark-nova-public.json</a> and <a href="./ark-nova-release-evidence.json">ark-nova-release-evidence.json</a> must match this package fingerprint.</p>
+      </section>
+      <section aria-labelledby="pre-upload" data-testid="ark-nova-upload-checklist">
+        <h2 id="pre-upload">Before Upload</h2>
+        <p>Run these local gates from the devbox checkout before putting this package on public hosting.</p>
+        <ul>
+          <li><code>npm run verify:public-package</code></li>
+          <li><code>npm run verify:no-public-tunnel</code></li>
+          <li><code>npm run stable-public:upload-handoff</code></li>
+          <li><code>npm run verify:stable-public-upload-handoff</code></li>
+        </ul>
+      </section>
+      <section aria-labelledby="hosted-routes" data-testid="ark-nova-hosted-route-checklist">
+        <h2 id="hosted-routes">Hosted Route Checklist</h2>
+        <p>After upload, these routes must resolve from the same stable HTTPS origin and the fingerprint above must remain visible here.</p>
+        <ul>
+          <li>App root: <code>/</code></li>
+          <li>Join deep link: <code>/index.html#/join/stable-public-smoke</code></li>
+          <li>Game deep link: <code>/index.html#/game/stable-public-smoke</code></li>
+          <li>Status page: <code>/status</code></li>
+          <li>Public manifest: <code>/ark-nova-public.json</code></li>
+          <li>Release evidence: <code>/ark-nova-release-evidence.json</code></li>
+          <li>Package check page: <code>/ark-nova-public-check.html</code></li>
+        </ul>
+      </section>
+      <section aria-labelledby="forbidden-dev-routes" data-testid="ark-nova-forbidden-dev-routes">
+        <h2 id="forbidden-dev-routes">Forbidden Dev Routes</h2>
+        <p>These devbox-only routes must not be exposed by the stable public host.</p>
+        <ul>
+          <li><code>/__arknova_dev/health</code></li>
+          <li><code>/debug/supabase-status</code></li>
+        </ul>
+      </section>
+      <section aria-labelledby="forbidden-hosts" class="warning" data-testid="ark-nova-forbidden-hosts">
+        <h2 id="forbidden-hosts">Rejected Stable URL Hosts</h2>
+        <p>Do not use localhost, private IP addresses, preview aliases, public tunnels, or reverse-proxy services as the stable player URL.</p>
+        <ul class="compact">
+          <li><code>localhost</code></li>
+          <li><code>127.0.0.1</code></li>
+          <li><code>private RFC1918 addresses</code></li>
+          <li><code>localhost.run</code></li>
+          <li><code>Pinggy</code></li>
+          <li><code>run.pinggy</code></li>
+          <li><code>pinggy-free.link</code></li>
+          <li><code>free.pinggy.net</code></li>
+          <li><code>ngrok</code></li>
+          <li><code>localtunnel</code></li>
+          <li><code>trycloudflare</code></li>
+          <li><code>trycloudflare.com</code></li>
+          <li><code>lhr.life</code></li>
+          <li><code>serveo</code></li>
+          <li><code>Netlify deploy-preview/branch URLs</code></li>
+          <li><code>Vercel git/pr/preview aliases</code></li>
+          <li><code>Cloudflare Pages branch preview URLs</code></li>
+        </ul>
+      </section>
+      <section aria-labelledby="next">
+        <h2 id="next">After Upload</h2>
+        <p>Finalize the hosted HTTPS URL from the devbox checkout, then share player links only after the stable public gates pass.</p>
+        <ul>
+          <li><code>npm run stable-public:go-live:finalize -- --public-url=&lt;hosted-url&gt;</code></li>
+          <li><code>npm run verify:stable-public:browser-actions</code></li>
+          <li><code>npm run verify:handoff-ready:stable</code></li>
+          <li><code>npm run verify:bga-release:stable</code></li>
+          <li><code>npm run verify:no-public-tunnel</code></li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
