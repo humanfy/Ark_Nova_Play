@@ -3,10 +3,10 @@
   "app": "ark-nova-v0",
   "packageName": "ark-nova-online",
   "packageVersion": "0.1.0",
-  "generatedAt": "2026-08-02T01:41:11.262Z",
+  "generatedAt": "2026-08-02T01:46:33.156Z",
   "git": {
-    "commit": "bc8db8b06736bdeaec88cbdb83e175dea6af918b",
-    "shortCommit": "bc8db8b06736",
+    "commit": "f0589ab3a2b38106141fc333dcd3a085c329c309",
+    "shortCommit": "f0589ab3a2b3",
     "dirty": false
   },
   "build": {
@@ -103,9 +103,9 @@
   "release": {
     "distFingerprint": {
       "algorithm": "sha256",
-      "value": "21373530c02f41e183ef520c3e055def7684e2fe390e1ce4208e7ce9b8e3dcfd",
+      "value": "a9c2db4a396eed5f2093906a70d73f2e21a0f7c0d6a0d7808689b7d94cdcdfcd",
       "fileCount": 286,
-      "totalBytes": 13727294,
+      "totalBytes": 13727436,
       "excludes": [
         "ark-nova-public.json",
         "ark-nova-release-evidence.json",
