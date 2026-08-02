@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-02T02:31:18.926Z",
+  "generatedAt": "2026-08-02T02:35:08.944Z",
   "currentAssets": [
     "assets/Auth-BJCmAGFS.js",
     "assets/Game-4C7BPCdp.js",
@@ -21,15 +21,5 @@
     "assets/supabase-vendor-DECvRwsC.js",
     "assets/ui-vendor-D_zA4mb7.js"
   ],
-  "compatibilityAssets": [
-    "assets/Auth-Wyy_3vXm.js",
-    "assets/Game-BjmXU6GU.js",
-    "assets/Home-DazPzqLk.js",
-    "assets/JoinGame-BGdxbL6Y.js",
-    "assets/NotFound-BsFl_vsi.js",
-    "assets/ServerSettings-B6rSmAh6.js",
-    "assets/SupabaseStatus-EqsE-TIa.js",
-    "assets/ark-game-controller-Bh8aG1eL.js",
-    "assets/index-qIne1xqO.js"
-  ]
+  "compatibilityAssets": []
 }
