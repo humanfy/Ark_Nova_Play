@@ -3,10 +3,10 @@
   "app": "ark-nova-v0",
   "packageName": "ark-nova-online",
   "packageVersion": "0.1.0",
-  "generatedAt": "2026-08-02T01:46:33.156Z",
+  "generatedAt": "2026-08-02T02:31:23.343Z",
   "git": {
-    "commit": "f0589ab3a2b38106141fc333dcd3a085c329c309",
-    "shortCommit": "f0589ab3a2b3",
+    "commit": "db7a76b3ebe3544dc61225f0afb3d3c8b105fd1e",
+    "shortCommit": "db7a76b3ebe3",
     "dirty": false
   },
   "build": {
@@ -17,11 +17,12 @@
     "devRoutesEnabled": false,
     "supabaseUrlConfigured": true,
     "supabaseAnonKeyConfigured": true,
+    "authoritativeApiConfigured": true,
     "xhtmlShell": false
   },
   "publicSelfTest": {
     "contractVersion": 1,
-    "accessModel": "static-frontend-plus-supabase-rpc",
+    "accessModel": "static-frontend-plus-authoritative-api",
     "stableUrl": {
       "protocol": "https:",
       "rejectsLocalOrPrivateHosts": true,
@@ -103,9 +104,9 @@
   "release": {
     "distFingerprint": {
       "algorithm": "sha256",
-      "value": "a9c2db4a396eed5f2093906a70d73f2e21a0f7c0d6a0d7808689b7d94cdcdfcd",
+      "value": "112df7b774118abdec6f7d6d9907e50f2ff5e6f6a2769fe597923f980a94a2e4",
       "fileCount": 286,
-      "totalBytes": 13727436,
+      "totalBytes": 13727511,
       "excludes": [
         "ark-nova-public.json",
         "ark-nova-release-evidence.json",

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "app": "ark-nova-v0",
-  "generatedAt": "2026-08-02T01:46:29.591Z",
+  "generatedAt": "2026-08-02T02:31:19.850Z",
   "package": {
-    "generatedAt": "2026-08-02T01:46:29.591Z",
+    "generatedAt": "2026-08-02T02:31:19.850Z",
     "variant": "object-storage-hash-router",
     "routerMode": "hash",
     "basePath": "/Ark_Nova_Play/",
@@ -13,9 +13,9 @@
   "release": {
     "distFingerprint": {
       "algorithm": "sha256",
-      "value": "a9c2db4a396eed5f2093906a70d73f2e21a0f7c0d6a0d7808689b7d94cdcdfcd",
+      "value": "112df7b774118abdec6f7d6d9907e50f2ff5e6f6a2769fe597923f980a94a2e4",
       "fileCount": 286,
-      "totalBytes": 13727436,
+      "totalBytes": 13727511,
       "excludes": [
         "ark-nova-public.json",
         "ark-nova-release-evidence.json",
@@ -39,7 +39,7 @@
       "available": true,
       "ok": true,
       "generatedAt": "2026-07-02T15:49:20.729Z",
-      "ageMinutes": 43797,
+      "ageMinutes": 43842,
       "processFindings": [],
       "artifactFindings": [],
       "actionCount": 0,
@@ -83,7 +83,7 @@
       "available": true,
       "ok": true,
       "generatedAt": "2026-07-24T07:10:50.592Z",
-      "ageMinutes": 12636,
+      "ageMinutes": 12680,
       "status": "public-package-ready-stable-url-needed",
       "localPlayerReady": true,
       "sshDebugReady": false,
@@ -93,7 +93,7 @@
       "recommendedPath": "github-pages-ci",
       "recommendedProvider": "github-pages",
       "recommendedPathStatus": "repo-binding-needed",
-      "uploadSource": ".arknova-dev-room/public-package/ark-nova-public-dist-2026-08-02T01-46-29-591Z.zip",
+      "uploadSource": ".arknova-dev-room/public-package/ark-nova-public-dist-2026-08-02T02-31-19-850Z.zip",
       "zipSha256": null,
       "repoArchivePath": null,
       "repoArchiveSha256": null,
@@ -143,7 +143,7 @@
       "available": true,
       "ok": true,
       "generatedAt": "2026-08-02T00:44:17.924Z",
-      "ageMinutes": 62,
+      "ageMinutes": 107,
       "game": {
         "id": "a86cfecd-971a-4c35-8604-8d0902cbbcb1",
         "status": "finished",
@@ -170,7 +170,7 @@
       "available": true,
       "ok": false,
       "generatedAt": "2026-07-24T07:19:24.292Z",
-      "ageMinutes": 12627,
+      "ageMinutes": 12672,
       "mode": "ssh-devbox-smoke",
       "selected": null,
       "backendSmokeOk": null
@@ -181,7 +181,7 @@
       "available": true,
       "ok": true,
       "generatedAt": "2026-07-02T19:01:19.025Z",
-      "ageMinutes": 43605,
+      "ageMinutes": 43650,
       "selectedMode": null,
       "browserSmokeOk": true,
       "blockerCount": 0
@@ -192,7 +192,7 @@
       "available": true,
       "ok": true,
       "generatedAt": "2026-07-02T19:01:18.857Z",
-      "ageMinutes": 43605,
+      "ageMinutes": 43650,
       "mode": "ssh-production-preview",
       "baseUrl": "http://127.0.0.1:4173",
       "checkCount": 61,
@@ -204,7 +204,7 @@
       "available": true,
       "ok": true,
       "generatedAt": "2026-07-31T13:35:33.894Z",
-      "ageMinutes": 2171,
+      "ageMinutes": 2216,
       "game": null,
       "playerCount": 2
     },
@@ -212,12 +212,12 @@
       "label": "manual game browser smoke",
       "file": ".arknova-dev-room/browser-manual-game-smoke/latest-full.json",
       "available": true,
-      "ok": true,
-      "generatedAt": "2026-07-31T13:54:10.204Z",
-      "ageMinutes": 2152,
+      "ok": false,
+      "generatedAt": "2026-08-02T01:59:06.199Z",
+      "ageMinutes": 32,
       "mode": "manual-game-browser-smoke",
       "game": null,
-      "checkCount": 87,
+      "checkCount": 0,
       "runActions": true,
       "includeSpectator": true
     }

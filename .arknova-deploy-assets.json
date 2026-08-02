@@ -1,7 +1,27 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-02T01:46:29.464Z",
+  "generatedAt": "2026-08-02T02:31:18.926Z",
   "currentAssets": [
+    "assets/Auth-BJCmAGFS.js",
+    "assets/Game-4C7BPCdp.js",
+    "assets/Home-C-vgvz4D.js",
+    "assets/JoinGame-oC5pKAMe.js",
+    "assets/NotFound-9kFLMVgp.js",
+    "assets/ServerSettings-Du7ySUJj.js",
+    "assets/SupabaseStatus-ZI8PmMdL.js",
+    "assets/ark-catalog-data-Bs9OZk2g.js",
+    "assets/ark-game-controller-Dc938eId.js",
+    "assets/ark-game-controls-yZ4W8GNu.js",
+    "assets/ark-game-support-DmRiR_WM.js",
+    "assets/ark-network-client-z3x8qMKQ.js",
+    "assets/ark-rules-core-BvhF9frD.js",
+    "assets/index-CVlu9Q_w.css",
+    "assets/index-gMB8UGSq.js",
+    "assets/react-vendor-DRshQBDL.js",
+    "assets/supabase-vendor-DECvRwsC.js",
+    "assets/ui-vendor-D_zA4mb7.js"
+  ],
+  "compatibilityAssets": [
     "assets/Auth-Wyy_3vXm.js",
     "assets/Game-BjmXU6GU.js",
     "assets/Home-DazPzqLk.js",
@@ -9,17 +29,7 @@
     "assets/NotFound-BsFl_vsi.js",
     "assets/ServerSettings-B6rSmAh6.js",
     "assets/SupabaseStatus-EqsE-TIa.js",
-    "assets/ark-catalog-data-Bs9OZk2g.js",
     "assets/ark-game-controller-Bh8aG1eL.js",
-    "assets/ark-game-controls-yZ4W8GNu.js",
-    "assets/ark-game-support-DmRiR_WM.js",
-    "assets/ark-network-client-z3x8qMKQ.js",
-    "assets/ark-rules-core-BvhF9frD.js",
-    "assets/index-CVlu9Q_w.css",
-    "assets/index-qIne1xqO.js",
-    "assets/react-vendor-DRshQBDL.js",
-    "assets/supabase-vendor-DECvRwsC.js",
-    "assets/ui-vendor-D_zA4mb7.js"
-  ],
-  "compatibilityAssets": []
+    "assets/index-qIne1xqO.js"
+  ]
 }
