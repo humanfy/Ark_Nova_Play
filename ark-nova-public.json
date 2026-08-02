@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "app": "ark-nova-v0",
+  "packageName": "ark-nova-online",
+  "packageVersion": "0.1.0",
+  "generatedAt": "2026-08-02T01:20:44.660Z",
+  "git": {
+    "commit": "fe9ec4194d0258f0c0e36b7e4848d014c6a3a221",
+    "shortCommit": "fe9ec4194d02",
+    "dirty": false
+  },
+  "build": {
+    "mode": "production",
+    "basePath": "/Ark_Nova_Play/",
+    "routerMode": "hash",
+    "singleBundle": false,
+    "devRoutesEnabled": false,
+    "supabaseUrlConfigured": true,
+    "supabaseAnonKeyConfigured": true,
+    "xhtmlShell": false
+  },
+  "publicSelfTest": {
+    "contractVersion": 1,
+    "accessModel": "static-frontend-plus-supabase-rpc",
+    "stableUrl": {
+      "protocol": "https:",
+      "rejectsLocalOrPrivateHosts": true,
+      "rejectsTemporaryTunnelHosts": true,
+      "rejectsPreviewHostingUrls": true
+    },
+    "requiredRoutes": [
+      {
+        "id": "app-shell",
+        "path": "/",
+        "expected": "vite app shell"
+      },
+      {
+        "id": "join-deep-link",
+        "path": "/join/stable-public-smoke",
+        "expected": "vite app shell"
+      },
+      {
+        "id": "game-deep-link",
+        "path": "/game/stable-public-smoke",
+        "expected": "vite app shell"
+      },
+      {
+        "id": "status-page",
+        "path": "/status",
+        "expected": "diagnostics page"
+      },
+      {
+        "id": "public-manifest",
+        "path": "/ark-nova-public.json",
+        "expected": "production manifest with release fingerprint"
+      },
+      {
+        "id": "release-evidence",
+        "path": "/ark-nova-release-evidence.json",
+        "expected": "release smoke and access evidence summary"
+      },
+      {
+        "id": "public-check-page",
+        "path": "/ark-nova-public-check.html",
+        "expected": "public package identity page"
+      }
+    ],
+    "forbiddenRoutes": [
+      {
+        "id": "dev-endpoint",
+        "path": "/__arknova_dev/health",
+        "expectedStatus": 404
+      },
+      {
+        "id": "legacy-debug-status",
+        "path": "/debug/supabase-status",
+        "expected": "404 page in production"
+      }
+    ],
+    "requiredSecurityHeaders": [
+      "X-Content-Type-Options: nosniff",
+      "Referrer-Policy: strict-origin-when-cross-origin",
+      "Permissions-Policy: camera=(), microphone=(), geolocation=()",
+      "X-Frame-Options: DENY"
+    ],
+    "packageRootEntries": [
+      "index.html",
+      "404.html",
+      ".nojekyll",
+      "ark-nova-public.json",
+      "ark-nova-release-evidence.json",
+      "ark-nova-public-check.html"
+    ],
+    "postUploadGates": [
+      "npm run stable-public:go-live:finalize -- --public-url=https://your-production-site.example",
+      "npm run verify:stable-public:browser-actions",
+      "npm run verify:tester-handoff:stable-browser",
+      "npm run verify:handoff-ready:stable",
+      "npm run verify:bga-release:stable",
+      "npm run verify:no-public-tunnel"
+    ]
+  },
+  "release": {
+    "distFingerprint": {
+      "algorithm": "sha256",
+      "value": "21373530c02f41e183ef520c3e055def7684e2fe390e1ce4208e7ce9b8e3dcfd",
+      "fileCount": 286,
+      "totalBytes": 13727294,
+      "excludes": [
+        "ark-nova-public.json",
+        "ark-nova-release-evidence.json",
+        "ark-nova-public-check.html"
+      ]
+    },
+    "publicCheck": "ark-nova-public-check.html"
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "app": "ark-nova-v0",
+  "generatedAt": "2026-08-02T01:20:41.098Z",
+  "package": {
+    "generatedAt": "2026-08-02T01:20:41.098Z",
+    "variant": "object-storage-hash-router",
+    "routerMode": "hash",
+    "basePath": "/Ark_Nova_Play/",
+    "singleBundle": false,
+    "xhtmlShell": false
+  },
+  "release": {
+    "distFingerprint": {
+      "algorithm": "sha256",
+      "value": "21373530c02f41e183ef520c3e055def7684e2fe390e1ce4208e7ce9b8e3dcfd",
+      "fileCount": 286,
+      "totalBytes": 13727294,
+      "excludes": [
+        "ark-nova-public.json",
+        "ark-nova-release-evidence.json",
+        "ark-nova-public-check.html"
+      ]
+    },
+    "publicManifest": "ark-nova-public.json",
+    "releaseEvidence": "ark-nova-release-evidence.json",
+    "publicCheck": "ark-nova-public-check.html",
+    "packageManifest": "public-package.json"
+  },
+  "safety": {
+    "noPublicTunnelGuard": {
+      "ok": true,
+      "command": "npm run verify:no-public-tunnel",
+      "status": "passed during public package generation"
+    },
+    "publicTunnelCleanup": {
+      "label": "public tunnel cleanup",
+      "file": ".arknova-dev-room/public-tunnel-cleanup-latest.json",
+      "available": true,
+      "ok": true,
+      "generatedAt": "2026-07-02T15:49:20.729Z",
+      "ageMinutes": 43771,
+      "processFindings": [],
+      "artifactFindings": [],
+      "actionCount": 0,
+      "failureCount": 0
+    }
+  },
+  "access": {
+    "model": "stable-public-plus-ssh-devbox-fallback",
+    "stablePublicRequired": true,
+    "sshFallbackAllowed": true,
+    "forbiddenStableHosts": [
+      "localhost",
+      "127.0.0.1",
+      "private RFC1918 addresses",
+      "localhost.run",
+      "Pinggy",
+      "run.pinggy",
+      "pinggy-free.link",
+      "free.pinggy.net",
+      "ngrok",
+      "localtunnel",
+      "trycloudflare",
+      "trycloudflare.com",
+      "lhr.life",
+      "serveo",
+      "Netlify deploy-preview/branch URLs",
+      "Vercel git/pr/preview aliases",
+      "Cloudflare Pages branch preview URLs"
+    ],
+    "postUploadGates": [
+      "npm run stable-public:go-live:finalize -- --public-url=https://your-production-site.example",
+      "npm run verify:stable-public:browser-actions",
+      "npm run verify:tester-handoff:stable-browser",
+      "npm run verify:handoff-ready:stable",
+      "npm run verify:bga-release:stable",
+      "npm run verify:no-public-tunnel"
+    ],
+    "multiplayerReadiness": {
+      "label": "multiplayer readiness handoff",
+      "file": ".arknova-dev-room/multiplayer-readiness-audit-latest.json",
+      "available": true,
+      "ok": true,
+      "generatedAt": "2026-07-24T07:10:50.592Z",
+      "ageMinutes": 12610,
+      "status": "public-package-ready-stable-url-needed",
+      "localPlayerReady": true,
+      "sshDebugReady": false,
+      "publicBindReady": true,
+      "stablePublicReady": false,
+      "noPublicTunnelOk": true,
+      "recommendedPath": "github-pages-ci",
+      "recommendedProvider": "github-pages",
+      "recommendedPathStatus": "repo-binding-needed",
+      "uploadSource": ".arknova-dev-room/public-package/ark-nova-public-dist-2026-08-02T01-20-41-098Z.zip",
+      "zipSha256": null,
+      "repoArchivePath": null,
+      "repoArchiveSha256": null,
+      "repoPushStatus": "repo-binding-needed",
+      "sshTarget": "fengyu.97@n37-115-192",
+      "sshClientBaseUrl": "http://127.0.0.1:5173",
+      "sshProductionPreviewBaseUrl": "http://127.0.0.1:4173",
+      "sshDualForwardCommand": "ssh -N -L 5173:127.0.0.1:5173 -L 4173:127.0.0.1:4173 fengyu.97@n37-115-192",
+      "stableUrlRequirements": [
+        "must be https://",
+        "must not be localhost, loopback, LAN, or private IP",
+        "must not be Pinggy, ngrok, localhost.run, localtunnel, trycloudflare, lhr.life, or serveo",
+        "must pass stable-public:go-live:finalize browser-action gates before player handoff"
+      ],
+      "forbiddenAlternatives": [
+        "Do not use cloudflared, ngrok, Pinggy, localhost.run, localtunnel, trycloudflare, lhr.life, serveo, autossh, or reverse SSH port forwards as the stable public endpoint.",
+        "Do not use Supabase Edge Functions or Supabase Storage as the browser frontend host unless the stable public verifier proves renderable SPA HTML."
+      ],
+      "missingInputs": [
+        "GitHub repository binding or destination repo",
+        "GitHub Pages source set to GitHub Actions",
+        "hosted GitHub Pages HTTPS URL"
+      ],
+      "blockers": [
+        "ssh_devbox_debug_path: SSH/devbox BGA release gate did not report ok",
+        "stable_public_player_url: stable public player URL is not ready",
+        "stable_public_player_url: stable public deploy verification is not complete",
+        "stable_public_player_url: stable public BGA release gate did not report ok"
+      ],
+      "zipSha256Authority": "public-package-latest.json zipArchive.sha256; the containing ZIP hash is not embedded in the ZIP itself",
+      "publicBindReadyAuthority": "current export-public-package run binds this release evidence to the generated site-root ZIP; SSH/devbox readiness is proven by verify:bga-release:ssh; stable hosted URL still requires stable-public:go-live:finalize",
+      "repoArchiveAuthority": "multiplayer-readiness-audit-latest.json handoff.repoArchivePath after stable-public:go-live:prepare; the source archive is generated after the public package build",
+      "readinessSnapshot": {
+        "generatedAt": "2026-07-24T07:10:50.592Z",
+        "status": "local-playable",
+        "uploadSource": ".arknova-dev-room/public-package/ark-nova-public-dist-2026-07-23T21-34-13-225Z.zip",
+        "zipSha256": "cd81e1f7f63a64a735c723ad337b3bc474a663b07d310fd36defb75aa228ed59",
+        "repoArchivePath": ".arknova-dev-room/repo-handoff/ark-nova-github-pages-source-2026-07-02T19-02-35-855Z.tar.gz",
+        "repoArchiveSha256": "914db1a02163a7f481badcece9d8d18afe3f2878fe9c9208a02d66e629b29c03"
+      }
+    }
+  },
+  "smoke": {
+    "backendFullAction": {
+      "label": "backend full action smoke",
+      "file": ".arknova-dev-room/two-player-smoke-latest.json",
+      "available": true,
+      "ok": true,
+      "generatedAt": "2026-08-02T00:44:17.924Z",
+      "ageMinutes": 36,
+      "game": {
+        "id": "a86cfecd-971a-4c35-8604-8d0902cbbcb1",
+        "status": "finished",
+        "mode": "multi"
+      },
+      "actionSmokeOk": true,
+      "actionCount": 200,
+      "deepCheckCount": 63,
+      "skippedCount": 0
+    },
+    "supabaseRules": {
+      "label": "Supabase rule probes",
+      "file": ".arknova-dev-room/supabase-rules-last.json",
+      "available": true,
+      "ok": true,
+      "generatedAt": null,
+      "ageMinutes": null,
+      "mode": "supabase-rules",
+      "probeCount": 302
+    },
+    "sshBgaReleaseGate": {
+      "label": "SSH/devbox BGA release gate",
+      "file": ".arknova-dev-room/bga-release-gate-ssh-devbox-smoke.json",
+      "available": true,
+      "ok": false,
+      "generatedAt": "2026-07-24T07:19:24.292Z",
+      "ageMinutes": 12601,
+      "mode": "ssh-devbox-smoke",
+      "selected": null,
+      "backendSmokeOk": null
+    },
+    "testerHandoff": {
+      "label": "tester handoff gate",
+      "file": ".arknova-dev-room/tester-handoff-ready-latest.json",
+      "available": true,
+      "ok": true,
+      "generatedAt": "2026-07-02T19:01:19.025Z",
+      "ageMinutes": 43579,
+      "selectedMode": null,
+      "browserSmokeOk": true,
+      "blockerCount": 0
+    },
+    "testerBrowser": {
+      "label": "tester handoff browser smoke",
+      "file": ".arknova-dev-room/browser-tester-handoff-smoke/latest.json",
+      "available": true,
+      "ok": true,
+      "generatedAt": "2026-07-02T19:01:18.857Z",
+      "ageMinutes": 43579,
+      "mode": "ssh-production-preview",
+      "baseUrl": "http://127.0.0.1:4173",
+      "checkCount": 61,
+      "staticGateOk": true
+    },
+    "manualGameVerify": {
+      "label": "manual formal game verify",
+      "file": ".arknova-dev-room/manual-formal-game-verify-latest.json",
+      "available": true,
+      "ok": true,
+      "generatedAt": "2026-07-31T13:35:33.894Z",
+      "ageMinutes": 2145,
+      "game": null,
+      "playerCount": 2
+    },
+    "manualGameBrowser": {
+      "label": "manual game browser smoke",
+      "file": ".arknova-dev-room/browser-manual-game-smoke/latest-full.json",
+      "available": true,
+      "ok": true,
+      "generatedAt": "2026-07-31T13:54:10.204Z",
+      "ageMinutes": 2127,
+      "mode": "manual-game-browser-smoke",
+      "game": null,
+      "checkCount": 87,
+      "runActions": true,
+      "includeSpectator": true
+    }
+  },
+  "privacy": {
+    "omitsUserIds": true,
+    "omitsEmails": true,
+    "omitsTokens": true,
+    "omitsPrivateHands": true
+  },
+  "nextGates": [
+    "npm run stable-public:go-live:finalize -- --public-url=https://your-production-site.example",
+    "npm run verify:stable-public:browser-actions",
+    "npm run verify:tester-handoff:stable-browser",
+    "npm run verify:bga-release:stable",
+    "npm run verify:no-public-tunnel"
+  ]
+}
