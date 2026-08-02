@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-02T05:45:48.197Z",
+  "generatedAt": "2026-08-02T05:58:21.273Z",
   "currentAssets": [
     "assets/Auth-DFRLmo-A.js",
     "assets/Game-BeCCUukk.js",
@@ -15,11 +15,14 @@
     "assets/ark-game-support-DmRiR_WM.js",
     "assets/ark-network-client-Igzr-VVk.js",
     "assets/ark-rules-core-BvhF9frD.js",
-    "assets/index-CVlu9Q_w.css",
-    "assets/index-DHPaSiFo.js",
+    "assets/index-BzPJr31c.css",
+    "assets/index-CRGMAIBB.js",
     "assets/react-vendor-DRshQBDL.js",
     "assets/supabase-vendor-DECvRwsC.js",
     "assets/ui-vendor-D_zA4mb7.js"
   ],
-  "compatibilityAssets": []
+  "compatibilityAssets": [
+    "assets/index-CVlu9Q_w.css",
+    "assets/index-DHPaSiFo.js"
+  ]
 }
