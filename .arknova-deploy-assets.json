@@ -1,7 +1,27 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-02T05:58:21.273Z",
+  "generatedAt": "2026-08-08T17:45:55.915Z",
   "currentAssets": [
+    "assets/Auth-CeMHvW9K.js",
+    "assets/Game-By0JiglB.js",
+    "assets/Home-DoeRoZ-k.js",
+    "assets/JoinGame-CLAycVRv.js",
+    "assets/NotFound-x6uVLhoI.js",
+    "assets/ServerSettings-ah6bI5-T.js",
+    "assets/SupabaseStatus-C5V1vsQz.js",
+    "assets/ark-catalog-data-Bs9OZk2g.js",
+    "assets/ark-game-controller-DkSWIx6p.js",
+    "assets/ark-game-controls-yZ4W8GNu.js",
+    "assets/ark-game-support-DmRiR_WM.js",
+    "assets/ark-network-client-Igzr-VVk.js",
+    "assets/ark-rules-core-BvhF9frD.js",
+    "assets/index-BjZesEZs.css",
+    "assets/index-Jktcqiu1.js",
+    "assets/react-vendor-DRshQBDL.js",
+    "assets/supabase-vendor-DECvRwsC.js",
+    "assets/ui-vendor-D_zA4mb7.js"
+  ],
+  "compatibilityAssets": [
     "assets/Auth-DFRLmo-A.js",
     "assets/Game-BeCCUukk.js",
     "assets/Home-BxKoJ824.js",
@@ -9,20 +29,8 @@
     "assets/NotFound-_RHv4mmY.js",
     "assets/ServerSettings-D2JFe5QJ.js",
     "assets/SupabaseStatus-Di3o5ubj.js",
-    "assets/ark-catalog-data-Bs9OZk2g.js",
     "assets/ark-game-controller-DYzuZC0E.js",
-    "assets/ark-game-controls-yZ4W8GNu.js",
-    "assets/ark-game-support-DmRiR_WM.js",
-    "assets/ark-network-client-Igzr-VVk.js",
-    "assets/ark-rules-core-BvhF9frD.js",
     "assets/index-BzPJr31c.css",
-    "assets/index-CRGMAIBB.js",
-    "assets/react-vendor-DRshQBDL.js",
-    "assets/supabase-vendor-DECvRwsC.js",
-    "assets/ui-vendor-D_zA4mb7.js"
-  ],
-  "compatibilityAssets": [
-    "assets/index-CVlu9Q_w.css",
-    "assets/index-DHPaSiFo.js"
+    "assets/index-CRGMAIBB.js"
   ]
 }
